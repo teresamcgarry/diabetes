@@ -52,7 +52,11 @@ The dataset contains **21 numeric features** covering clinical, lifestyle, demog
 
 Link: <https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com>
 
-There is class imbalance in this dataset.
+There is class imbalance in this dataset as the target variable **Diabetes_012** is as follows:
+
+- **0** - No diabetes / only during pregnancy : 213,703 individuals (87.7%)
+- **1** - Prediabetes : 4,631 individuals (1.9%)
+- **2** - Diabetes : 35,346 individuals (10.4%)
 
 **Dataset Features**
 
@@ -183,6 +187,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
