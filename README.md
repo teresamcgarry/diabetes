@@ -48,8 +48,6 @@ The target variable **Diabetes_012** includes:
 - **1** - Prediabetes
 - **2** - Diabetes
 
-The dataset contains **21 numeric features** covering clinical, lifestyle, demographic, and socioeconomic factors.
-
 There is class imbalance in this dataset as the target variable **Diabetes_012** is as follows:
 
 - **0** - No diabetes / only during pregnancy : 213,703 individuals (87.7%)
@@ -60,7 +58,7 @@ There is class imbalance in this dataset as the target variable **Diabetes_012**
 
 Link: <https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com>
 
-This dataset has 21 feature variables. All variables are numeric.
+The dataset contains **21 numeric features** covering clinical, lifestyle, demographic, and socioeconomic factors.
 
 | **Feature** | **Question** | **Codes** |
 | --- | --- | --- |
@@ -187,6 +185,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
