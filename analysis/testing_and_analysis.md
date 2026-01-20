@@ -3,20 +3,20 @@
 **Initial EDA: Summary**
 
 *   There are 22 variables, all of which are floats.
-*   The description of each feature is included in the README file (i.e. the feature name, the question asked and the possible response codes)
+*   The description of each feature is included in the README file (i.e. the feature name, the question asked and the possible response codes).
 *   The dataset has been cleaned.
 *   There are no null values.
-*   However, BMI has both upper and lower outliers that need addressing.
+*   However, Body Mass Index (BMI) has both upper and lower outliers that need addressing.
 
 **Data Analysis**
 
-The following table describes the original BMI measure, while the histogram below offers a visual representation of the original measure.
+The following table describes the original BMI values, while the histogram below offers a visual representation of their distribution.
 
 Online research suggests that BMI is more typically between 18 and 50 (e.g. https://www.cdc.gov/healthyweight/assessing/bmi/adult\_bmi/index.html (cdc.gov in Bing)
 
 Therefore, in this dataset, there are some extreme outliers at both the lower and upper ends.
 
-| Feature | Count | mean | std | min | 25% | 50% | 75% | max |
+| Variable | Count | mean | std | min | 25% | 50% | 75% | max |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | BMI | 253680 | 28 | 6.61 | 12 | 24 | 27 | 31 | 98 |
 
@@ -28,11 +28,11 @@ Therefore, in this dataset, there are some extreme outliers at both the lower an
 
 Winsorisation is a practical way to limit the influence of extreme values without discarding data entirely. Instead of removing outliers, they are capped at the chosen percentile thresholds. This preserves sample size and distributional shape while preventing extreme values from dominating visualisations or summary statistics.
 
-**Cleaning Undertaken**
+**Data Cleaning Undertaken**
 
 In this dataset, Winsorisation for BMI was set to 1% (BMI = 18) and 99% (BMI = 50). The revised BMI distribution is summarised in the following histogram.
 
-| Feature | Count | mean | std | min | 25% | 50% | 75% | max |
+| Variable | Count | mean | std | min | 25% | 50% | 75% | max |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | BMI_winsorised | 253680 | 28 | 6.03 | 18 | 25 | 27 | 31 | 50 |
 
@@ -44,16 +44,16 @@ This variable, **BMI\_winsorised,** will be used in all analyses going forward a
 
 **Description of Spearman Correlation**
 
-Spearman correlation is a rank-based measure of association that captures how well the relationship between two variables can be described by a monotonic trend (as one variable increases, the other always tends to decrease) rather than a straight line. It is especially useful when your data are non‑normal, skewed, ordinal, or contain outliers, which is why it works so well in health and behavioural datasets like the one you are analysing.
+Spearman correlation is a rank-based measure of association that captures how well the relationship between two variables can be described by a monotonic trend (i.e. as one variable increases, the other always tends to decrease) rather than a straight line. It is especially useful when the data is skewed, ordinal, or contains outliers, which is why it works so well in health and behavioural datasets like this one.
 
 **Analysis Undertaken**
 
-A Spearman correlation, rather than a Pearson correlation, was selected to support the analysis as the distributions for the features are typically skewed (i.e. not normally distributed).
+A Spearman correlation, rather than a Pearson correlation, was selected to support the analysis as the variable distributions were typically skewed (i.e. not normally distributed).
 
-Two separate correlations were run:
+Two separate correlation analyses were conducted:
 
-*   An initial correlation of all features vs all features, to get an idea of the interplay between the features.
-*   A second correlation to focus on Diabetes\_012 as the target variable versus all the other features.
+*   An initial correlation of all features vs all features, to understand the relationships between features.
+*   A second correlation using Diabetes\_012 as the target/outcome variable versus the remaining features.
 
 **Initial Correlation: All features vs All features using a Heatmap.**
 
@@ -67,7 +67,7 @@ This initial correlation matrix shows how health and demographic variables are i
 
 **Findings**
 
-Once again, Diabetes risk is driven most strongly by overall health, blood pressure, BMI, mobility limitations, and cholesterol, with age and heart disease also playing meaningful roles. Protective factors like physical activity, higher education, and higher income show a lower likelihood of diabetes risk.
+Once again, diabetes risk is driven most strongly by overall health, blood pressure, BMI, mobility limitations, and cholesterol, with age and heart disease also playing meaningful roles. Protective factors such as physical activity, higher education, and higher income show a lower likelihood of diabetes risk.
 
 **Feature Importance in Predicting Diabetes**
 
@@ -98,15 +98,11 @@ Once again, Diabetes risk is driven most strongly by overall health, blood press
 
 **Description of Chi-square**
 
-Chi-square is a statistical test that measures whether two categorical variables are associated. It compares the _observed_ counts in a contingency table with the _expected_ counts you would get if there were no relationship between the variables.
+Chi-square is a statistical test that measures whether two categorical variables are associated. It compares the observed counts in a contingency table with the expected counts that you would get if there were no relationship between the variables.
 
 **Analysis Undertaken**
 
-Chi-square tests were undertaken for the 14 binary variables, with Diabetes\_012 as the target variable.
-
-**Findings**
-
-High blood pressure, difficulty walking, high cholesterol, and heart disease show the strongest associations with diabetes, with the largest Cramer's V values. Lifestyle factors such as physical activity, smoking, fruit/vegetable intake, and alcohol consumption have weaker but still statistically significant relationships. Access‑to‑care variables and sex show only small associations.
+Chi-square tests were undertaken for the 14 binary variables, with Diabetes\_012 as the target variable. The results are shown in the table below.
 
 | Variable | Chi2 | p | cramers_v |
 | --- | --- | --- | --- |
@@ -127,19 +123,21 @@ High blood pressure, difficulty walking, high cholesterol, and heart disease sho
 
 **Modelling**
 
-**Model 1: Logistic Regression**
+**Model 1: Multinomial Logistic Regression**
 
-**Description of Logistic Regression**
+**Description of Multinomial Logistic Regression**
 
-Logistic regression is a statistical classification method used to model the probability of a binary outcome (such as yes/no or disease/no disease) based on one or more predictor variables. It uses a logistic function to map predicted values to probabilities between 0 and 1.
+Multinomial logistic regression was used to model the probability of belonging to one of three outcome categories (i.e. no diabetes, prediabetes, or diabetes) based on the predictor variables. This method extends binary logistic regression by allowing the dependent variable to have more than two unordered categories, while still using the logistic function to estimate category-specific probabilities.
 
-1.  **Analysis Undertaken**
+**Analysis Undertaken**
 
-Initially, a logistic regression was undertaken with the target maintaining the 3 outcome codes:
+An initial multinomial regression was conducted using the original three‑category outcome variable, retaining the codes:
 
-*   No diabetes: 213,703
-*   Prediabetes: 35,346
-*   Diabetes: 4,631
+*   **No diabetes**: 213,703 individual responses
+*   **Prediabetes**: 35,346 individual responses
+*   **Diabetes**: 4,631 individual responses
+
+This allowed the model to estimate how each predictor influenced the likelihood of membership in each category.
 
 **Definitions**
 
@@ -150,11 +148,11 @@ Definitions of:
 *   **f1\_score**: = How well does the model perform when we care about both catching true cases and avoiding false alarms?
 *   **support**: count of individuals in each class
 
-In health analysis recall is more typically the primary evaluation metric.
+In health analysis, **recall** is more typically the primary evaluation metric.
 
 **Findings**
 
-*   Despite moderate accuracy (69%), logistic regression performs poorly on minority classes, especially prediabetes, indicating a limited ability to separate the three diabetes states.
+*   Despite achieving moderate overall accuracy (69%), the multinomial logistic regression performs poorly on minority classes, especially prediabetes, indicating a limited ability to separate the three diabetes classes.
 *   Individuals who are younger, leaner, healthier, and socioeconomically advantaged are much more likely to be classified as having no diabetes.
 
 **Classification report**
@@ -177,7 +175,7 @@ The model accuracy was 69%.
 
 **Top positive & negative coefficients per class:**
 
-**No Diabetes (class 0): top positive features:**
+**No diabetes (class 0): top positive features:**
 
 *   HvyAlcoholConsump 0.145355
 *   Income 0.133858
@@ -188,7 +186,7 @@ The model accuracy was 69%.
 *   MentHlth 0.015768
 *   Veggies 0.011974
 
-**No Diabetes (class 0): top negative features:**
+**No diabetes (class 0): top negative features:**
 
 *   GenHlth -0.586325
 *   BMI\_winsorised -0.503940
@@ -247,20 +245,22 @@ The model accuracy was 69%.
 
 1.  **Analysis Undertaken**
 
-The logistic regression was repeated with the target variable reduced to 2 outcome codes:
+A logistic regression was conducted with the target variable reduced to 2 outcome codes:
 
-*   Diabetes (code 0): 35,346
-*   Prediabetes (code 1): 4,631
+*   Diabetes (code 0): 35,346 individual responses
+*   Prediabetes (code 1): 4,631 individual responses
 
-The aim was to understand the factors that lead from prediabetes to Diabetes.
+The aim was to understand the factors that lead from prediabetes to diabetes.
 
 **Findings**
 
-This logistic regression comparing prediabetes with diabetes showed limited ability to distinguish between the two groups, achieving only moderate discrimination (ROC AUC = 0.62) despite the large sample size. Indeed, the performance for identifying prediabetes was particularly weak, reflecting both the severe class imbalance and the close similarity between the two metabolic states.
+This logistic regression comparing prediabetes with diabetes showed limited ability to distinguish between the two groups, achieving only moderate performance (ROC AUC = 0.62) despite the large sample size. Indeed, the performance for identifying prediabetes was particularly weak, reflecting both the severe class imbalance and the close similarity between the two metabolic states.
 
 Overall, the available variables do not provide enough differentiation to reliably separate prediabetes from diabetes.
 
-**Results Summary**
+**Findings**
+
+The logistic regression model demonstrated moderate overall performance, achieving an accuracy of 59% and a ROC AUC of 0.624, indicating limited ability to distinguish between prediabetes and diabetes.
 
 **Classification report**
 
@@ -335,13 +335,13 @@ A random forest is an ensemble machine‑learning method that builds many decisi
 
 An initial Random Forest was undertaken with 3 classes:
 
-*   0 = No diabetes: 213,703
-*   1 = Prediabetes: 4,631
-*   2 = Diabetes: 35,346
+*   0 = No diabetes: 213,703 individual responses
+*   1 = Prediabetes: 4,631 individual responses
+*   2 = Diabetes: 35,346 individual responses
 
 **Findings**
 
-This model achieves an 84% accuracy, which is almost entirely driven by the no diabetes i.e. dominant class, and has extremely poor recall for both prediabetes and diabetes.
+This model achieves an 84% accuracy, which is almost entirely driven by the no diabetes class i.e. the dominant class, and has extremely poor recall for both prediabetes and diabetes.
 
 Feature importance is dominated by BMI, age, income, physical and general health, which are known diabetes risk factors.
 
@@ -398,7 +398,7 @@ SMOTE is a resampling technique used to fix class imbalance by creating syntheti
 
 **Results**
 
-SMOTE did not improve the model.
+SMOTE did not improve the model. Its findings are not included.
 
 **Class-Based Weights**
 
@@ -412,16 +412,16 @@ When one class dominates (e.g. the ‘no diabetes’ class represents 84% of the
 *   Reducing the penalty for misclassifying majority-class samples
 *   Shifting the model’s decision boundaries so it pays more attention to the minority class.
 
-**Model 4: Random Forest with 2 Classes**
+**Model 4: Random Forest with 2 Classes and class-based weighting**
 
 A second Random Forest model was undertaken with 2 classes:
 
-*   0 = No diabetes: 213,703
-*   1 = Prediabetes/Diabetes: 39,977
+*   0 = No diabetes: 213,703 individual responses
+*   1 = Prediabetes/Diabetes: 39,977 individual responses
 
 **Findings**
 
-The model achieved 74% accuracy, once again strong at identifying individuals without diabetes while still capturing most at‑risk cases despite class imbalance. Feature importance results highlight that overall health status, blood pressure and BMI are the dominant predictors for Diabetes.
+The model achieved 74% accuracy. Once again, the model was strong at identifying individuals without diabetes while still capturing most at‑risk cases the despite class imbalance. Feature importance results highlight that overall health status, blood pressure and BMI are the dominant predictors for diabetes.
 
 **Classification report**
 
@@ -479,7 +479,7 @@ These top 15 features were then grouped into 1 of 5 groups as follows:
 
 **Socioeconomic:**
 
-*   Income,
+*   Income
 *   Education
 
 **Lifestyle:**
@@ -502,16 +502,16 @@ These top 15 features were then grouped into 1 of 5 groups as follows:
 
 Hyperparameter tuning for Random Forest controls how the forest learns to provide better prediction, better generalisations and more stable models. Random Forest already reduces over fitting by averaging many trees. Hyperparameter tuning fin-tunes the bias-variance trade-off.
 
-**Model 5: Random Forest model with hyperparameter tuning**
+**Model 5: Random Forest Model with Hyperparameter Tuning**
 
 A final Random Forest model with hyperparameter tuning was attempted with 2 classes:
 
-*   0 = No diabetes: 213,703
-*   1 = Prediabetes/Diabetes: 39,977
+*   0 = No diabetes: 213,703 individual responses
+*   1 = Prediabetes/Diabetes: 39,977 individual responses
 
 **Findings**
 
-Due to computational constraints in the local development environment, this element of the model let to the computer crashing. The untuned Random Forest models already showed stable and interpretable feature importance rankings that were highly consistent with results from correlation analysis, chi-square tests, and logistic regression.
+Due to computational constraints in the local development environment, this element of the model led to the computer crashing. The untuned Random Forest models already showed stable and interpretable feature importance rankings that were highly consistent with results from correlation analysis, chi-square tests, and logistic regression.
 
 The model built the following groups:
 
