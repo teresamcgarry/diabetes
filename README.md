@@ -70,35 +70,32 @@ Although the dataset is large (n = 253,680), the target variable **Diabetes_012*
 This imbalance indicates that the majority class (0) dominates the dataset, while the prediabetes class (1) is particularly under‑represented. As a result, standard classification models may be biased toward predicting the majority class unless appropriate techniques—such as class weighting, resampling, or algorithmic adjustments—are applied.
 
 **Dataset Features**
+As wel las teh target variable this dataset has 21 additional variables. All variables are numeric.
 
-Link: <https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com>
-
-The dataset contains **22 numeric features** covering clinical, lifestyle, demographic, and socioeconomic factors.
-
-| **Feature** | **Question** | **Codes** |
-| --- | --- | --- |
-| Diabetes_012 | Have you ever been told by a doctor that you have diabetes? | 0=no diabetes<br><br>1=pre-diabetes<br><br>2=diabetes |
-| HighBP | Have you ever been told by a doctor, nurse, or other health professional that you have high blood pressure? | 0=no high BP<br><br>1=High BP |
-| HighChol | Have you ever been told by a doctor, nurse, or other health professional that your blood cholesterol is high? | 0=no high cholesterol<br><br>1=high cholesterol |
-| CholCheck | Have you had your cholesterol checked within the past five years? | 0=no<br><br>1=yes |
-| BMI | Calculated from weight and height | Range: 12:98<br><br><18.5: Underweight<br><br>18.5-24.8: Normal weight<br><br>25-29.9: Overweight<br><br>\>=30:Obese |
-| Smoker | Have you smoked at least 10 cigarettes in your entire life? (Note 5 packs=1-cigarettes) | 0=no<br><br>1=yes |
-| Stroke | (Ever told) you had a stroke? | 0=no<br><br>1=yes |
-| HeartDiseaseorAttack | Have you ever been told by a doctor, nurse, or other health professional that you had coronary heart disease or a heart attack? | 0=no<br><br>1=yes |
-| PhysActivity | During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise? | 0=no<br><br>1=yes |
-| Fruits | Do you eat fruit at least once per day? | 0=no<br><br>1=yes |
-| Veggies | Do you eat vegetables at least once per day? | 0 =no<br><br>1=yes |
-| HvyAlcholConsump | During the past 30 days, how many drinks of alcohol did you have on average per week?<br><br>Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week) | 0=no<br><br>1=yes |
-| AnyHealthcare | Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government plans such as Medicare or Medicaid? | 0=no<br><br>1=yes |
-| NoDocbcCost | Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? | 0=no<br><br>1=yes |
-| GenHlth | Would you say that in general your health is… | 1= excellent<br><br>2=Very good<br><br>3=Good<br><br>4=Fair<br><br>5= poor |
-| MentHlth | Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good? | 0-30 days |
-| PhysHlth | Thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? | 0-30 days |
-| DiffWalk | Do you have serious difficulty walking or climbing stairs? | 0=no<br><br>1=yes |
-| Sex | Are you male or female? | 0=female<br><br>1=male |
-| Age | What is your age? | 1=18-24 years<br><br>2=25-29 years<br><br>3=30-34 years<br><br>4=35-39 years<br><br>5=40-44 years<br><br>6=45-49 years<br><br>7=50-54 years<br><br>8=55-59 years<br><br>9=60-64 years<br><br>10=65-69 years<br><br>11=70-74 years<br><br>12=75-79 years<br><br>13 = 80+ |
-| Education | What is the highest grade or year of school you completed? | 1= never attended school or only kindergarten<br><br>2=Grades 1-8 (elementary)<br><br>3=Grades 9-11(some high school)<br><br>4=Grade 12 or GED(high school graduate)<br><br>5=College 1-3 years (some college or technical school)<br><br>6=College 4+ years (college graduate) |
-| Income | Is your annual household income from all sources… | 1=< \$10k<br><br>2=\$10k-\$14.99k<br><br>3=\$15k-£19.99k<br><br>4=\$20k-\$24.99k<br><br>5=\$25k=\$34.99k<br><br>6=\$35k-\$49.99k<br><br>7=\$50k-£74.99k<br><br>8=≥ \$75k |
+| Group | Feature | Question | Codes |
+| --- | --- | --- | --- |
+| Target | Diabetes_012 | Have you ever been told by a doctor that you have diabetes? | 0=no diabetes1=pre-diabetes2=diabetes |
+| Clinical/Physiological | GenHlth | Would you say that in general your health is… | 1= excellent2=Very good3=Good4=Fair5= poor |
+| Clinical/Physiological | BMI | Calculated from weight and height | Range: 12:98<18.5: Underweight18.5-24.8: Normal weight25-29.9: Overweight>=30: Obese |
+| Clinical/Physiological | HighChol | Have you ever been told by a doctor, nurse, or other health professional that your blood cholesterol is high? | 0=no high cholesterol1=high cholesterol |
+| Clinical/Physiological | CholCheck | Have you had your cholesterol checked within the past five years? | 0=no1=yes |
+| Clinical/Physiological | HeartDiseaseorAttack | Have you ever been told by a doctor, nurse, or other health professional that you had coronary heart disease or a heart attack? | 0=no1=yes |
+| Clinical/Physiological | HighBP | Have you ever been told by a doctor, nurse, or other health professional that you have high blood pressure? | 0=no high BP1=High BP |
+| Clinical/Physiological | Stroke | (Ever told) you had a stroke? | 0=no1=yes |
+| Demographic | Age | What is your age? | 1=18–24 years2=25–29 years3=30-34 years4=35-39 years5=40-44 years6=45-49 years7=50-54 years8=55-59 years9=60-64 years10=65-69 years11=70-74 years12=75-79 years13 = 80+ |
+| Demographic | Sex | Are you male or female? | 0=female1=male |
+| Functional Health | DiffWalk | Do you have serious difficulty walking or climbing stairs? | 0=no1=yes |
+| Functional Health | PhysHlth | Thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? | 0-30 days |
+| Functional Health | MentHlth | Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good? | 0-30 days |
+| Socioeconomic | NoDocbcCost | Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? | 0=no1=yes |
+| Socioeconomic | AnyHealthcare | Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government plans such as Medicare or Medicaid? | 0=no1=yes |
+| Socioeconomic | Education | What is the highest grade or year of school you completed? | 1= never attended school or only kindergarten2=Grades 1-8 (elementary)3=Grades 9-11(some high school)4=Grade 12 or GED(high school graduate)5=College 1–3 years (some college or technical school)6=College 4+ years (college graduate) |
+| Socioeconomic | Income | Is your annual household income from all sources… | 1=< $10k2=$10k-$14.99k3=$15k-£19.99k4=$20k-$24.99k5=$25k=$34.99k6=$35k-$49.99k7=$50k-£74.99k8=≥ $75k |
+| Lifestyle | Smoker | Have you smoked at least 10 cigarettes in your entire life? (Note 5 packs=1—cigarettes) | 0=no1=yes |
+| Lifestyle | HvyAlcholConsump | During the past 30 days, how many drinks of alcohol did you have on average per week?Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week) | 0=no1=yes |
+| Lifestyle | Fruits | Do you eat fruit at least once per day? | 0=no1=yes |
+| Lifestyle | Veggies | Do you eat vegetables at least once per day? | 0 =no1=yes |
+| Lifestyle | PhysActivity | During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise? | 0=no1=yes |
 
 **Project Plan**
 
@@ -220,6 +217,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
