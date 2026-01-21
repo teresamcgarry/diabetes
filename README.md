@@ -48,11 +48,15 @@ The target variable **Diabetes_012** includes:
 - **1** - Prediabetes
 - **2** - Diabetes
 
-There is class imbalance in this dataset as the target variable **Diabetes_012** is as follows:
+Although the dataset is large (n = 253,680), the target variable **Diabetes_012** is highly imbalanced. The distribution of classes is as follows:
 
-- **0** - No diabetes / only during pregnancy : 213,703 individuals (87.7%)
-- **1** - Prediabetes : 4,631 individuals (1.9%)
-- **2** - Diabetes : 35,346 individuals (10.4%)
+- 0 — No diabetes / only during pregnancy: 213,703 individuals (84%)
+
+- 1 — Prediabetes: 4,631 individuals (1.8%)
+
+- 2 — Diabetes: 35,346 individuals (13.9%)
+
+This imbalance indicates that the majority class (0) dominates the dataset, while the prediabetes class (1) is particularly under‑represented. As a result, standard classification models may be biased toward predicting the majority class unless appropriate techniques—such as class weighting, resampling, or algorithmic adjustments—are applied.
 
 **Dataset Features**
 
@@ -101,13 +105,15 @@ The raw BMI values contained extreme outliers at both ends of the distribution (
 
 **Statistical Analysis and Why Chosen/Data analysis methods used and their limitation/alternative approaches**
 
-To understand relationships and identify predictors, the following methods were used:
+To explore variable relationships and determine the most influential predictors of diabetes risk, several complementary analytical approaches were applied:
 
-- Correlation analysis
-- Logistic regression
-- Additional statistical tests as appropriate
+- Correlation analysis to assess linear associations between key features.
 
-Limitations and alternative approaches are discussed in the analysis notebooks.
+- Multinomial logistic regression and binary logistic regression to quantify the strength and direction of relationships between predictors and diabetes outcomes.
+
+- Random Forest modelling, including systematic hyperparameter tuning, to capture nonlinear relationships and interaction effects while evaluating variable importance.
+
+This anlysis is fully documented in the training and analysis notebook.
 
 **Data Visualisation**
 
@@ -189,6 +195,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
