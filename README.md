@@ -58,7 +58,7 @@ There is class imbalance in this dataset as the target variable **Diabetes_012**
 
 Link: <https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com>
 
-The dataset contains **21 numeric features** covering clinical, lifestyle, demographic, and socioeconomic factors.
+The dataset contains **22 numeric features** covering clinical, lifestyle, demographic, and socioeconomic factors.
 
 | **Feature** | **Question** | **Codes** |
 | --- | --- | --- |
@@ -93,7 +93,11 @@ A Trello board was used for project planning and tracking.
 
 **Data cleaning**
 
-The dataset was already pre‑cleaned, so minimal preprocessing was required before exploratory data analysis.
+The dataset was already pre‑cleaned, so only minimal preprocessing was required prior to exploratory data analysis.
+
+The accompanying testing_and_analysis file documents one additional step: Winsorisation of the BMI variable. 
+
+The raw BMI values contained extreme outliers at both ends of the distribution (as low as 12 and as high as 98). To reduce the influence of these biologically implausible values while retaining all observations, the BMI range was Winsorised to fall between 18 and 50.
 
 **Statistical Analysis and Why Chosen/Data analysis methods used and their limitation/alternative approaches**
 
@@ -185,6 +189,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
