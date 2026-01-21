@@ -70,7 +70,8 @@ Although the dataset is large (n = 253,680), the target variable **Diabetes_012*
 This imbalance indicates that the majority class (0) dominates the dataset, while the prediabetes class (1) is particularly under‑represented. As a result, standard classification models may be biased toward predicting the majority class unless appropriate techniques—such as class weighting, resampling, or algorithmic adjustments—are applied.
 
 **Dataset Features**
-As wel las teh target variable this dataset has 21 additional variables. All variables are numeric.
+
+As well as the target variable, this dataset has 21 additional variables. All variables are numeric.
 
 | Group | Feature | Question | Codes |
 | --- | --- | --- | --- |
@@ -217,6 +218,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
