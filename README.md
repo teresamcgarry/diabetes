@@ -17,7 +17,7 @@ Final outputs include:
 
 All datasets, analysis code, and visual assets are organized for clarity and portfolio readiness.
 
-# **Table of Contents** #
+## **Table of Contents** 
 
 ## **Key Business Question**
 
@@ -47,7 +47,7 @@ In 2021:
 - **97.6 million adults** had prediabetes
 - **1.2 million** new diagnoses occurred
 
-**Diabetes Data Source**
+## **Diabetes Dataset Description**
 
 The **Behavioural Risk Factor Surveillance System (BRFSS)** is an annual CDC survey collecting responses from over 400,000 U.S. adults on health behaviours, chronic conditions, and preventive care.
 
@@ -104,15 +104,18 @@ A Trello board was used for project planning and tracking.
 
 [Diabetes Analysis | Trello](https://trello.com/b/wzOxufpZ/diabetes-analysis)
 
-**Data cleaning**
+# **Methods/Analysis Approach** 
+## **Data cleaning**
 
 The dataset was already pre‑cleaned, so only minimal preprocessing was required prior to exploratory data analysis.
+
+## **Winsorisation**
 
 The accompanying testing_and_analysis file (analysis/testing_and_analysis.md) documents one additional step, anmely, Winsorisation of the BMI variable. 
 
 The raw BMI values contained extreme outliers at both ends of the distribution (as low as 12 and as high as 98). To reduce the influence of these biologically implausible values while retaining all observations, the BMI range was Winsorised to fall between 18 and 50.
 
-**Statistical Analysis and Why Chosen/Data analysis methods used and their limitation/alternative approaches**
+## **Statistical Analysis**
 
 To explore variable relationships and determine the most influential predictors of diabetes risk, several complementary analytical approaches were applied:
 
@@ -123,16 +126,6 @@ To explore variable relationships and determine the most influential predictors 
 - Random Forest modelling, including systematic hyperparameter tuning, to capture nonlinear relationships and interaction effects while evaluating variable importance.
 
 This anlysis is fully documented in the training and analysis notebook which can be located here: analysis/testing_and_analysis.md
-
-**Data Visualisation**
-
-Insights from the data analysis are communicated through multiple formats to support analysis and insight:
-
-- A Power BI dashboard providing an exploration of key metrics and patterns.
-
-- A presentation summarising the main findings, modelling results, and practical implications.
-
-- Visualisations embedded within Jupyter notebooks.
 
 # *Key Findings*
 ## *Conclusions**
@@ -150,6 +143,16 @@ Insights from the data analysis are communicated through multiple formats to sup
 
 In terms of wider societal measures, support services should be developed that identify and support people showing early signs of declining general or physical health
 
+## **Data Visualisation**
+
+Insights from this data analysis are communicated through multiple formats to support analysis and insight:
+
+- A Power BI dashboard providing an exploration of key metrics and patterns.
+
+- A presentation summarising the main findings, modelling results, and practical implications.
+
+- Visualisations embedded within Jupyter notebooks.
+
 **Dashboards**
 
 List each dashboard page and describe:
@@ -158,7 +161,16 @@ List each dashboard page and describe:
 - Which visual elements are used
 - How it communicates findings to technical and non‑technical audiences
 
-**Requirements**
+## **Repository Strucutre**
+
+XXXXXXx
+
+## **How to Reproduce**
+
+- Clone the repository
+- Install dependencies
+- 
+## **Requirements**
 
 - Python 3.7+ (pandas, numpy, seaborn, matplotlib, scikit‑learn, statsmodels)
 - VS Code
@@ -167,26 +179,13 @@ List each dashboard page and describe:
 - GitHub (version control)
 - Dataset: BRFSS 2015 CSV
 
-**How to Reproduce**
-
-- Clone the repository
-- Install dependencies
-
-Code:
-
-pip install -r requirements.txt
-
-- Place raw CSV file into /data_raw
-- Run Jupyter notebook
-- Open the Power BI dashboard
-
 **Ethical Considerations**
 
-**Data Privacy**
+## **Data Privacy**
 
 The dataset contains no personally identifiable information (PII) and is fully anonymized in accordance with GDPR principles. All data is publicly available and intended for research use.
 
-**Bias or fairness issues with the data**
+## **Bias or fairness issues with the data**
 
 Survey data may reflect:
 
@@ -196,28 +195,24 @@ Survey data may reflect:
 
 Predictive models can serve to amplify these biases, so results should be interpreted with caution, especially across demographic subgroups.
 
-**Legal or societal issues**
+## **Legal or societal issues**
 
 The BRFSS dataset is publicly released for research use, so there are no direct legal restrictions. However, health data can reflect broader societal inequalities and differences in healthcare access. Any insights or models built from this dataset should be interpreted with awareness of these underlying disparities.
 
-**Use of generative AI**
+## **Use of generative AI**
 
-**Further Analysis Opportunities**
-
-| **Analysis** | **Opportunity** |
-| --- | --- |
-|     |     |
-|     |     |
+## **Further Analysis Opportunities**
 
 [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com)
 
-**Credits**
+## **Credits**
 
 The Code Institute course materials for the course "Data Analysis with Artificial Intelligence" were used as a template for the code in this project.
 
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
