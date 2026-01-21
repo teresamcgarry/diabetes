@@ -113,15 +113,17 @@ To explore variable relationships and determine the most influential predictors 
 
 - Random Forest modelling, including systematic hyperparameter tuning, to capture nonlinear relationships and interaction effects while evaluating variable importance.
 
-This anlysis is fully documented in the training and analysis notebook.
+This anlysis is fully documented in the training and analysis notebook which can be located here: analysis/testing_and_analysis.md
 
 **Data Visualisation**
 
-Insights are communicated through:
+Insights from the data analysis are communicated through multiple formats to support analysis and insight:
 
-- A Power BI dashboard
-- A presentation summarizing key findings
-- Visualizations embedded in Jupyter notebooks
+- A Power BI dashboard providing an exploration of key metrics and patterns.
+
+- A presentation summarising the main findings, modelling results, and practical implications.
+
+- Visualisations embedded within Jupyter notebooks.
 
 **Key Findings**
 
@@ -195,6 +197,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
