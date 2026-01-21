@@ -1,4 +1,5 @@
-# **Capstone Project: Diabetes Prediction Project**
+# **Capstone Project: Diabetes Risk Prediction Project**
+
 ## **Analysis to understand the best predictors of diabetes risk**
 ![People Image v4](https://github.com/user-attachments/assets/ce3ab396-568a-414d-8e31-a9c9a2649b3a)
 
@@ -16,15 +17,25 @@ Final outputs include:
 
 All datasets, analysis code, and visual assets are organized for clarity and portfolio readiness.
 
+# **Table of Contents** #
+
 ## **Key Business Question**
 
-Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population:
+**Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?**
 
-- Clinical/Psychological
-- Demographic
-- Functional Health
-- Socioeconomic
-- Lifestyle
+To address this question, predictors were organised into five conceptual domains. This structure supports both interpretation and story-telling when discussing model results. 
+
+The five groups are:
+
+- Clinical / Physiological: indicators of underlying health status, diagnosed conditions.
+
+- Demographic:  – core population characteristics: age and sex.
+
+- Functional Health – measures of physical functioning, mobility, and limitations in daily activities.
+
+- Socioeconomic – variables reflecting education, income, employment, and access to resources.
+
+- Lifestyle – behavioural factors including physical activity, diet, smoking, and alcohol use.
 
 ## **Research Background**
 
@@ -99,7 +110,7 @@ A Trello board was used for project planning and tracking.
 
 The dataset was already pre‑cleaned, so only minimal preprocessing was required prior to exploratory data analysis.
 
-The accompanying testing_and_analysis file documents one additional step: Winsorisation of the BMI variable. 
+The accompanying testing_and_analysis file (analysis/testing_and_analysis.md) documents one additional step, anmely, Winsorisation of the BMI variable. 
 
 The raw BMI values contained extreme outliers at both ends of the distribution (as low as 12 and as high as 98). To reduce the influence of these biologically implausible values while retaining all observations, the BMI range was Winsorised to fall between 18 and 50.
 
@@ -125,9 +136,21 @@ Insights from the data analysis are communicated through multiple formats to sup
 
 - Visualisations embedded within Jupyter notebooks.
 
-**Key Findings**
+# *Key Findings*
+## *Conclusions**
 
-**Strategic Insights and Recommendations**
+- Diabetes risk is mainly driven by overall clinical and physiological elements such as general health, body weight and blood pressure
+
+- Physical limitations, such as difficulty walking, and long-term health conditions, further increase risk
+
+- Socioeconomic disadvantage also contributes to higher risk, whilst lifestyle factors play a much more modest role
+
+## **Recommendations**
+- Diabetes prevention measures should prioritise maintaining:
+ -cardiovascular health
+ - a healthy weight
+
+In terms of wider societal measures, support services should be developed that identify and support people showing early signs of declining general or physical health
 
 **Dashboards**
 
@@ -197,6 +220,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
