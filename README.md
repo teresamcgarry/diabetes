@@ -1,5 +1,5 @@
 # **Capstone Project: Diabetes Prediction Project**
-## **Analysis to understand the best predictors of Diabetes**
+## **Analysis to understand the best predictors of diabetes risk**
 ![People Image v4](https://github.com/user-attachments/assets/ce3ab396-568a-414d-8e31-a9c9a2649b3a)
 
 ## **Project Overview**
@@ -18,7 +18,7 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 
 ## **Key Business Question**
 
-Which health, behavioural and socioeconomic factors are the strongest predictors of diabetes status in the US population:
+Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population:
 
 - Clinical/Psychological
 - Demographic
@@ -197,6 +197,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
