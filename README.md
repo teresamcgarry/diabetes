@@ -18,25 +18,22 @@ Final outputs include:
 All datasets, analysis code, and visual assets are organized for clarity and portfolio readiness.
 
 # **Table of Contents** 
-\# \*\*Table of Contents\*\* Key Business Question Research Background Diabetes Dataset Description Project Plan Methods & Analysis Approach Key Findings Dashboards Repository Structure Requirements GitHub How to Reproduce Ethical and Privacy Considerations Use of Generative AI Practical Challenges and Considerations Further Analysis Opportunities
 
-
-
-Key Business Question
-Research Background
-Diabetes Dataset Description
-Project Plan
-Methods & Analysis Approach
-Key Findings
-Dashboards
-Repository Structure
-Requirements
-GitHub
-How to Reproduce
-Ethical and Privacy Considerations
-Use of Generative AI
-Practical Challenges and Considerations
-Further Analysis Opportunities
+- Key Business Question
+- Research Background
+- Diabetes Dataset Description
+- Project Plan
+- Methods & Analysis Approach
+- Key Findings
+- Dashboards
+- Repository Structure
+- Requirements
+- GitHub
+- How to Reproduce
+- Ethical and Privacy Considerations
+- Use of Generative AI
+- Practical Challenges and Considerations
+- Further Analysis Opportunities
 
 # *Key Business Question*
 
@@ -68,7 +65,7 @@ In 2021:
 
 # **Diabetes Dataset Description**
 
-# **Dataset Explored**
+## **Dataset Explored**
 
 The **Behavioural Risk Factor Surveillance System (BRFSS)** is an annual CDC survey collecting responses from over 400,000 U.S. adults on health behaviours, chronic conditions, and preventive care.
 
@@ -90,7 +87,7 @@ Although the dataset is large (n = 253,680), the target variable **Diabetes_012*
 
 This imbalance indicates that the majority class (0) dominates the dataset, while the prediabetes class (1) is particularly under‑represented. As a result, standard classification models may be biased toward predicting the majority class unless appropriate techniques—such as class weighting, resampling, or algorithmic adjustments—are applied.
 
-# *Dataset Features*
+## *Dataset Features*
 
 As well as the target variable, this dataset has 21 additional variables. All variables are numeric.
 
@@ -325,6 +322,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
