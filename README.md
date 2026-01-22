@@ -19,37 +19,37 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 
 # **Table of Contents** 
 
-**Key Business Question**
+Key Business Question
 
-**Research Background**
+Research Background
 
-**Diabetes Dataset Description**
+Diabetes Dataset Description
 
-**Project Plan**
+Project Plan
 
-**Methods & Analysis Approach** 
+Methods & Analysis Approach
 
-**Key Findings**
+Key Findings
 
-**Key Business Question**
+Dashboards
 
-**Dashboards**
+Repository Structure
 
-**Repository Strucutre**
+Requirements
 
-**How to Reproduce**
+How to Reproduce
 
-**Ethical and Privacy Considerations**
+Ethical and Privacy Considerations
 
-**Use of generative AI**
+Use of Generative AI
 
-**Practical challenges and considerations**
+Practical Challenges and Considerations
 
-**Further Analysis Opportunities**
+Further Analysis Opportunities
 
-**Credits**
+# *Key Business Question*
 
-**Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?**
+# *Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?*
 
 To address this question, predictors were organised into five conceptual domains. This structure supports both interpretation and story-telling when discussing model results. 
 
@@ -230,11 +230,6 @@ The dashboard is designed to communicate insights effectively to both technical 
 
 XXXXXXx
 
-# **How to Reproduce**
-
-- Clone the repository
-- Install dependencies
-- 
 # **Requirements**
 
 - Python 3.7+ (pandas, numpy, seaborn, matplotlib, scikit‑learn, statsmodels)
@@ -244,6 +239,11 @@ XXXXXXx
 - GitHub (version control)
 - Dataset: BRFSS 2015 CSV
 
+# **How to Reproduce**
+
+- Clone the repository
+- Install dependencies
+- 
 # **Ethical and Privacy Considerations**
 
 ## **Data Privacy**
@@ -318,6 +318,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
