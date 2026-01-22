@@ -128,18 +128,7 @@ To explore variable relationships and determine the most influential predictors 
 This anlysis is fully documented in the training and analysis notebook which can be located here: analysis/testing_and_analysis.md
 
 # *Key Findings*
-## *Conclusions**
-
-- Diabetes risk is mainly driven by overall clinical and physiological elements such as general health, body weight and blood pressure
-
-- Physical limitations, such as difficulty walking, and long-term health conditions, further increase risk
-
-- Socioeconomic disadvantage also contributes to higher risk, whilst lifestyle factors play a much more modest role
-
-## **Recommendations**
-- Diabetes prevention measures should prioritise maintaining:
- -cardiovascular health
- - a healthy weight
+## *Conclusions** - ADDDDDDDDDDDDDDDDDDD
 
 In terms of wider societal measures, support services should be developed that identify and support people showing early signs of declining general or physical health
 
@@ -159,7 +148,10 @@ List each dashboard page and describe:
 
 - What insights it presents
 - Which visual elements are used
-- How it communicates findings to technical and non‑technical audiences
+
+## **How it communicates findings to technical and non‑technical audiences**
+
+The dashboard is designed to communicate insights effectively to both technical and non-technical audiences by combining clear visual summaries and plain-language explanations for decision-makers with the ability to explore underlying metrics and model outputs for more technically informed users.
 
 ## **Repository Strucutre**
 
@@ -212,6 +204,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
