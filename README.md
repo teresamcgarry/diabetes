@@ -127,10 +127,34 @@ To explore variable relationships and determine the most influential predictors 
 
 This anlysis is fully documented in the training and analysis notebook which can be located here: analysis/testing_and_analysis.md
 
-# *Key Findings*
-## *Conclusions** - ADDDDDDDDDDDDDDDDDDD
 
-In terms of wider societal measures, support services should be developed that identify and support people showing early signs of declining general or physical health
+# **Key Findings**
+
+## Conclusions 
+
+**1. Clinical / Physiological factors lead**
+BMI, blood pressure, cholesterol, and general health were the strongest risk indicators.
+
+**2. Demographics matter**
+Age (especially mid-40s onwards) and lower income levels were the next most important predictors
+
+**3. Functional limitations signalled risk**
+Poor physical health days, mobility issues and mental health burden, flagged elevated risk
+
+**4. Lifestyle factors contributed but were less dominant**
+Smoking, alcohol use, and physical inactivity contributed, but were less influential than clinical and socioeconomic factors 
+
+# **Recommendations**
+
+1. Prioritise clinical risk screening with routine checks for BMI, blood pressure and cholesterol in primary care settings
+
+2. Target high-risk demographic groups by expanding preventative outreach for adults in their 40s and beyond, and for lower-income populations where risk increases
+
+3. Strengthen support for functional and mental health needs
+
+4.Reinforce lifestyle interventions with structural support by promoting smoking cessation, physical activity and reduced alcohol use 
+
+# **Dashboards**
 
 ## **Data Visualisation**
 
@@ -142,12 +166,38 @@ Insights from this data analysis are communicated through multiple formats to su
 
 - Visualisations embedded within Jupyter notebooks.
 
-**Dashboards**
+# **Dashboard Pages and Insights**
 
-List each dashboard page and describe:
+## **How it communicates findings to technical and non‑technical audiences**
 
-- What insights it presents
-- Which visual elements are used
+The dashboard is designed to communicate insights effectively to both technical and non-technical audiences by combining clear visual summaries and plain-language explanations for decision-makers with the ability to explore underlying metrics and model outputs for more technically informed users.
+
+# **Page 1: This page is an explanation of the backgroud to the project**
+
+<img width="2000" height="1121" alt="image" src="https://github.com/user-attachments/assets/abfac08d-8e92-45df-9c36-b53ef56a46b8" />
+
+## **Page 2: This page is a summary of the key findings of the research**
+
+<img width="1480" height="826" alt="image" src="https://github.com/user-attachments/assets/277e8aac-2567-4743-9472-a0705b2792d1" />
+
+## **Page 3: This page is a summary of the diabetes predictors grouped into 5 groups to aid understanding**
+
+<img width="2000" height="1121" alt="image" src="https://github.com/user-attachments/assets/ac9f1c07-c904-45cf-b8f0-4d3e3d717295" />
+
+
+## **Page 4: This page is a summary of the top 5 predictors of diabetes risk**
+
+
+<img width="2000" height="1121" alt="image" src="https://github.com/user-attachments/assets/5bb1871a-bfb8-48c6-89b8-ac81981b794e" />
+
+## **Page 5: This page is a summary of the top 10 predictors of diabetes risk i.e. offering a little more detail into the key diabetes risk predictors**
+
+<img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/c07ab5c2-0ebf-4009-a681-4c7c1a4ad09f" />
+
+## **Page 6: This page is a summary of all 21 predictors of diabetes risk i.e. offering the full detail of diabetes risk predictors**
+
+<img width="2000" height="1115" alt="image" src="https://github.com/user-attachments/assets/38e2a727-b9ea-4461-9dc8-9bfffcf9c03e" />
+
 
 ## **How it communicates findings to technical and non‑technical audiences**
 
@@ -204,6 +254,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
