@@ -18,38 +18,29 @@ Final outputs include:
 All datasets, analysis code, and visual assets are organized for clarity and portfolio readiness.
 
 # **Table of Contents** 
+\# \*\*Table of Contents\*\* Key Business Question Research Background Diabetes Dataset Description Project Plan Methods & Analysis Approach Key Findings Dashboards Repository Structure Requirements GitHub How to Reproduce Ethical and Privacy Considerations Use of Generative AI Practical Challenges and Considerations Further Analysis Opportunities
+
+
 
 Key Business Question
-
 Research Background
-
 Diabetes Dataset Description
-
 Project Plan
-
 Methods & Analysis Approach
-
 Key Findings
-
 Dashboards
-
 Repository Structure
-
 Requirements
-
+GitHub
 How to Reproduce
-
 Ethical and Privacy Considerations
-
 Use of Generative AI
-
 Practical Challenges and Considerations
-
 Further Analysis Opportunities
 
 # *Key Business Question*
 
-# *Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?*
+## *Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?*
 
 To address this question, predictors were organised into five conceptual domains. This structure supports both interpretation and story-telling when discussing model results. 
 
@@ -99,7 +90,7 @@ Although the dataset is large (n = 253,680), the target variable **Diabetes_012*
 
 This imbalance indicates that the majority class (0) dominates the dataset, while the prediabetes class (1) is particularly under‑represented. As a result, standard classification models may be biased toward predicting the majority class unless appropriate techniques—such as class weighting, resampling, or algorithmic adjustments—are applied.
 
-# *Dataset Features**
+# *Dataset Features*
 
 As well as the target variable, this dataset has 21 additional variables. All variables are numeric.
 
@@ -232,12 +223,28 @@ XXXXXXx
 
 # **Requirements**
 
-- Python 3.7+ (pandas, numpy, seaborn, matplotlib, scikit‑learn, statsmodels)
+- Python 3.7+
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- scikit‑learn
+- statsmodels
+- Jupyter Notebook / JupyterLab
 - VS Code
-- Power BI
+- Virtual environment (venv or Conda)
+- pip or conda for package installation
+- Power BI Desktop
 - Trello (project management)
 - GitHub (version control)
 - Dataset: BRFSS 2015 CSV
+- Minimum 8–16 GB RAM recommended
+- Windows/macOS/Linux compatible environment
+- Dataset: BRFSS 2015 CSV
+
+## *GitHub*
+
+GitHub provides a shared online workspace where code and project files are stored, making collaboration transparent and organized. Version control tracks every change over time, allowing teams to experiment safely, review edits, and revert to earlier versions when needed.
 
 # **How to Reproduce**
 
@@ -318,6 +325,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
