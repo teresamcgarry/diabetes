@@ -18,19 +18,36 @@ Final outputs include:
 All datasets, analysis code, and visual assets are organized for clarity and portfolio readiness.
 
 # **Table of Contents** 
+
 **Key Business Question**
+
 **Research Background**
+
 **Diabetes Dataset Description**
+
 **Project Plan**
+
 **Methods & Analysis Approach** 
+
 **Key Findings**
+
 **Key Business Question**
+
 **Dashboards**
+
 **Repository Strucutre**
+
 **How to Reproduce**
+
 **Ethical and Privacy Considerations**
+
 **Use of generative AI**
 
+**Practical challenges and considerations**
+
+**Further Analysis Opportunities**
+
+**Credits**
 
 **Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?**
 
@@ -227,7 +244,6 @@ XXXXXXx
 - GitHub (version control)
 - Dataset: BRFSS 2015 CSV
 
-
 # **Ethical and Privacy Considerations**
 
 ## **Data Privacy**
@@ -250,17 +266,59 @@ The BRFSS dataset is publicly released for research use, so there are no direct 
 
 # **Use of generative AI**
 
-## **Further Analysis Opportunities**
+AI played a key role in supporting this project by accelerating coding, guiding data analysis, enhancing visualisation, and elevating the overall story-telling. 
+
+It enabled me to understnad and process complex datasets quickly and accurately, uncovering patterns and insights that would have been difficult or taken longer to identify manually. 
+
+Through dynamic and clear visualisations, AI helped transform raw information into clear and intuitive graphics that supported deeper understanding. 
+
+Fianlly, AI contributed to the storytelling aspect of the project by helping me synthisise and structure findings into a coherent, engaging story. 
+
+This combination of analytical power, visual clarity, and narrative support significantly improved the quality and impact of the final work.
+
+# **Practical challenges and considerations**
+
+## **Technical environment issues**
+
+Kernel instability: Repeated kernel crashes disrupted workflow, especially during memory‑intensive modelling and visualisation. This required frequent restarts, checkpointing, and breaking code into smaller, more manageable segments.
+
+Library incompatibilities: Conflicts between package versions (e.g., pandas, scikit‑learn, matplotlib) caused import errors and inconsistent behaviour. Resolving this involved reinstalling environments, pinning versions, and occasionally rewriting code to match available library functions.
+
+Computational constraints: Large datasets and ensemble models strained available RAM and CPU resources, limiting the complexity of models that could be run and requiring more efficient preprocessing and sampling strategies.
+
+## **Data‑related challenges**
+
+Severe class imbalance: The dominance of the “no diabetes” class reduced model performance and required additional techniques such as resampling, weighting, and reframing the prediction task.
+
+Data cleaning complexity: Handling missing values, outliers, and mixed data types added significant preprocessing overhead and required careful methodological justification.
+
+Modelling and evaluation considerations
+Model convergence issues: Some algorithms struggled to converge due to imbalance, multicollinearity, or noisy predictors, requiring tuning, simplification, or alternative models.
+
+Balancing interpretability and performance: More powerful models (e.g., random forests) performed better but were harder to interpret, while simpler models were more transparent but less accurate.
+
+Threshold and calibration considerations: For screening‑oriented tasks, selecting appropriate probability cut‑offs and assessing calibration became essential to ensure practical usefulness.
+
+## **Workflow and reproducibility**
+
+Maintaining a stable environment: Ensuring reproducibility across sessions was challenging due to environment resets and package conflicts.
+
+Version control and documentation: Tracking changes, documenting decisions, and ensuring code clarity were essential to manage complexity and avoid regressions.
+
+# **Further Analysis Opportunities**
+
+Further analysis opportinities are outlined in the accompanying file located here: analysis/testing_and_analysis.md
 
 [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com)
 
-## **Credits**
+# **Credits**
 
 The Code Institute course materials for the course "Data Analysis with Artificial Intelligence" were used as a template for the code in this project.
 
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
