@@ -29,11 +29,12 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 - Repository Structure
 - Requirements
 - GitHub
-- How to Reproduce
+- How to Reproduce this Project
+- Practical Challenges and Considerations
 - Ethical and Privacy Considerations
 - Use of Generative AI
-- Practical Challenges and Considerations
 - Further Analysis Opportunities
+- Credits
 
 # *Key Business Question*
 
@@ -169,8 +170,8 @@ Smoking, alcohol use, and physical inactivity contributed, but were less i
 2. Target high-risk demographic groups by expanding preventative outreach for adults in their 40s and beyond, and for lower-income populations where risk increases
 
 3. Strengthen support for functional and mental health needs
-
-4.Reinforce lifestyle interventions with structural support by promoting smoking cessation, physical activity and reduced alcohol use 
+   
+4. Reinforce lifestyle interventions with structural support by promoting smoking cessation, physical activity and reduced alcohol use 
 
 # **Dashboards**
 
@@ -184,9 +185,7 @@ Insights from this data analysis are communicated through multiple formats to su
 
 - Visualisations embedded within Jupyter notebooks.
 
-## **Dashboard Pages and Insights**
-
-## **How it communicates findings to technical and non‑technical audiences**
+## **How Dashboard Pages and Insights communicates findings to technical and non‑technical audiences**
 
 The dashboard is designed to communicate insights effectively to both technical and non-technical audiences by combining clear visual summaries and plain-language explanations for decision-makers with the ability to explore underlying metrics and model outputs for more technically informed users.
 
@@ -243,11 +242,43 @@ XXXXXXx
 
 GitHub provides a shared online workspace where code and project files are stored, making collaboration transparent and organized. Version control tracks every change over time, allowing teams to experiment safely, review edits, and revert to earlier versions when needed.
 
-# **How to Reproduce**
+# *How to Reproduce this project*
 
-- Clone the repository
-- Install dependencies
-- 
+To reproduce this project, clone the repository to your local machine and install all required dependencies using the provided environment or requirements file. 
+
+After setup, open the testing_and_analysis notebook to review what analysis was previously and run the Python code in order to generate the results. 
+
+If your project uses configuration files or specific data paths, update those settings as noted in the documentation.
+
+# **Practical challenges and considerations**
+
+## **Technical environment issues**
+
+Kernel instability: Repeated kernel crashes disrupted workflow, especially during memory‑intensive modelling and visualisation. This required frequent restarts, checkpointing, and breaking code into smaller, more manageable segments.
+
+Library incompatibilities: Conflicts between package versions (e.g., pandas, scikit‑learn, matplotlib) caused import errors and inconsistent behaviour. Resolving this involved reinstalling environments, pinning versions, and occasionally rewriting code to match available library functions.
+
+Computational constraints: Large datasets and ensemble models strained available RAM and CPU resources, limiting the complexity of models that could be run and requiring more efficient preprocessing and sampling strategies.
+
+## **Data‑related challenges**
+
+Severe class imbalance: The dominance of the “no diabetes” class reduced model performance and required additional techniques such as resampling, weighting, and reframing the prediction task.
+
+Data cleaning complexity: Handling missing values, outliers, and mixed data types added significant preprocessing overhead and required careful methodological justification.
+
+Modelling and evaluation considerations
+Model convergence issues: Some algorithms struggled to converge due to imbalance, multicollinearity, or noisy predictors, requiring tuning, simplification, or alternative models.
+
+Balancing interpretability and performance: More powerful models (e.g., random forests) performed better but were harder to interpret, while simpler models were more transparent but less accurate.
+
+Threshold and calibration considerations: For screening‑oriented tasks, selecting appropriate probability cut‑offs and assessing calibration became essential to ensure practical usefulness.
+
+## **Workflow and reproducibility**
+
+Maintaining a stable environment: Ensuring reproducibility across sessions was challenging due to environment resets and package conflicts.
+
+Version control and documentation: Tracking changes, documenting decisions, and ensuring code clarity were essential to manage complexity and avoid regressions.
+
 # **Ethical and Privacy Considerations**
 
 ## **Data Privacy**
@@ -280,35 +311,6 @@ Fianlly, AI contributed to the storytelling aspect of the project by helping me 
 
 This combination of analytical power, visual clarity, and narrative support significantly improved the quality and impact of the final work.
 
-# **Practical challenges and considerations**
-
-## **Technical environment issues**
-
-Kernel instability: Repeated kernel crashes disrupted workflow, especially during memory‑intensive modelling and visualisation. This required frequent restarts, checkpointing, and breaking code into smaller, more manageable segments.
-
-Library incompatibilities: Conflicts between package versions (e.g., pandas, scikit‑learn, matplotlib) caused import errors and inconsistent behaviour. Resolving this involved reinstalling environments, pinning versions, and occasionally rewriting code to match available library functions.
-
-Computational constraints: Large datasets and ensemble models strained available RAM and CPU resources, limiting the complexity of models that could be run and requiring more efficient preprocessing and sampling strategies.
-
-## **Data‑related challenges**
-
-Severe class imbalance: The dominance of the “no diabetes” class reduced model performance and required additional techniques such as resampling, weighting, and reframing the prediction task.
-
-Data cleaning complexity: Handling missing values, outliers, and mixed data types added significant preprocessing overhead and required careful methodological justification.
-
-Modelling and evaluation considerations
-Model convergence issues: Some algorithms struggled to converge due to imbalance, multicollinearity, or noisy predictors, requiring tuning, simplification, or alternative models.
-
-Balancing interpretability and performance: More powerful models (e.g., random forests) performed better but were harder to interpret, while simpler models were more transparent but less accurate.
-
-Threshold and calibration considerations: For screening‑oriented tasks, selecting appropriate probability cut‑offs and assessing calibration became essential to ensure practical usefulness.
-
-## **Workflow and reproducibility**
-
-Maintaining a stable environment: Ensuring reproducibility across sessions was challenging due to environment resets and package conflicts.
-
-Version control and documentation: Tracking changes, documenting decisions, and ensuring code clarity were essential to manage complexity and avoid regressions.
-
 # **Further Analysis Opportunities**
 
 Further analysis opportinities are outlined in the accompanying file located here: analysis/testing_and_analysis.md
@@ -322,6 +324,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
