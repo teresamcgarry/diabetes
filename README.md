@@ -3,7 +3,7 @@
 ## **Analysis to understand the best predictors of diabetes risk**
 ![People Image v4](https://github.com/user-attachments/assets/ce3ab396-568a-414d-8e31-a9c9a2649b3a)
 
-## **Project Overview**
+# **Project Overview**
 
 This project delivers a complete analytics workflow exploring health indicators and demographic factors associated with diabetes. It includes feature engineering, data aggregation, statistical testing, and visualization using Python and Power BI.
 
@@ -17,9 +17,20 @@ Final outputs include:
 
 All datasets, analysis code, and visual assets are organized for clarity and portfolio readiness.
 
-## **Table of Contents** 
+# **Table of Contents** 
+**Key Business Question**
+**Research Background**
+**Diabetes Dataset Description**
+**Project Plan**
+**Methods & Analysis Approach** 
+**Key Findings**
+**Key Business Question**
+**Dashboards**
+**Repository Strucutre**
+**How to Reproduce**
+**Ethical and Privacy Considerations**
+**Use of generative AI**
 
-## **Key Business Question**
 
 **Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?**
 
@@ -37,7 +48,7 @@ The five groups are:
 
 - Lifestyle – behavioural factors including physical activity, diet, smoking, and alcohol use.
 
-## **Research Background**
+# **Research Background**
 
 Diabetes is one of the most common chronic diseases in the United States, affecting millions and placing a substantial burden on the healthcare system. Although there is no cure, lifestyle changes and medical treatment can significantly reduce risks. Early detection improves outcomes, making predictive models valuable tools for clinicians and public‑health planning.
 
@@ -47,7 +58,9 @@ In 2021:
 - **97.6 million adults** had prediabetes
 - **1.2 million** new diagnoses occurred
 
-## **Diabetes Dataset Description**
+# **Diabetes Dataset Description**
+
+# **Dataset Explored**
 
 The **Behavioural Risk Factor Surveillance System (BRFSS)** is an annual CDC survey collecting responses from over 400,000 U.S. adults on health behaviours, chronic conditions, and preventive care.
 
@@ -69,7 +82,7 @@ Although the dataset is large (n = 253,680), the target variable **Diabetes_012*
 
 This imbalance indicates that the majority class (0) dominates the dataset, while the prediabetes class (1) is particularly under‑represented. As a result, standard classification models may be biased toward predicting the majority class unless appropriate techniques—such as class weighting, resampling, or algorithmic adjustments—are applied.
 
-**Dataset Features**
+# *Dataset Features**
 
 As well as the target variable, this dataset has 21 additional variables. All variables are numeric.
 
@@ -98,13 +111,14 @@ As well as the target variable, this dataset has 21 additional variables. All va
 | Lifestyle | Veggies | Do you eat vegetables at least once per day? | 0 =no1=yes |
 | Lifestyle | PhysActivity | During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise? | 0=no1=yes |
 
-**Project Plan**
+# **Project Plan**
 
 A Trello board was used for project planning and tracking.
 
 [Diabetes Analysis | Trello](https://trello.com/b/wzOxufpZ/diabetes-analysis)
 
-# **Methods/Analysis Approach** 
+# **Methods & Analysis Approach** 
+
 ## **Data cleaning**
 
 The dataset was already pre‑cleaned, so only minimal preprocessing was required prior to exploratory data analysis.
@@ -127,7 +141,6 @@ To explore variable relationships and determine the most influential predictors 
 
 This anlysis is fully documented in the training and analysis notebook which can be located here: analysis/testing_and_analysis.md
 
-
 # **Key Findings**
 
 ## Conclusions 
@@ -144,7 +157,7 @@ Poor physical health days, mobility issues and mental health burden, flagged ele
 **4. Lifestyle factors contributed but were less dominant**
 Smoking, alcohol use, and physical inactivity contributed, but were less influential than clinical and socioeconomic factors 
 
-# **Recommendations**
+## **Recommendations**
 
 1. Prioritise clinical risk screening with routine checks for BMI, blood pressure and cholesterol in primary care settings
 
@@ -166,13 +179,13 @@ Insights from this data analysis are communicated through multiple formats to su
 
 - Visualisations embedded within Jupyter notebooks.
 
-# **Dashboard Pages and Insights**
+## **Dashboard Pages and Insights**
 
 ## **How it communicates findings to technical and non‑technical audiences**
 
 The dashboard is designed to communicate insights effectively to both technical and non-technical audiences by combining clear visual summaries and plain-language explanations for decision-makers with the ability to explore underlying metrics and model outputs for more technically informed users.
 
-# **Page 1: This page is an explanation of the backgroud to the project**
+## **Page 1: This page is an explanation of the backgroud to the project**
 
 <img width="2000" height="1121" alt="image" src="https://github.com/user-attachments/assets/abfac08d-8e92-45df-9c36-b53ef56a46b8" />
 
@@ -184,9 +197,7 @@ The dashboard is designed to communicate insights effectively to both technical 
 
 <img width="2000" height="1121" alt="image" src="https://github.com/user-attachments/assets/ac9f1c07-c904-45cf-b8f0-4d3e3d717295" />
 
-
 ## **Page 4: This page is a summary of the top 5 predictors of diabetes risk**
-
 
 <img width="2000" height="1121" alt="image" src="https://github.com/user-attachments/assets/5bb1871a-bfb8-48c6-89b8-ac81981b794e" />
 
@@ -198,21 +209,16 @@ The dashboard is designed to communicate insights effectively to both technical 
 
 <img width="2000" height="1115" alt="image" src="https://github.com/user-attachments/assets/38e2a727-b9ea-4461-9dc8-9bfffcf9c03e" />
 
-
-## **How it communicates findings to technical and non‑technical audiences**
-
-The dashboard is designed to communicate insights effectively to both technical and non-technical audiences by combining clear visual summaries and plain-language explanations for decision-makers with the ability to explore underlying metrics and model outputs for more technically informed users.
-
-## **Repository Strucutre**
+# **Repository Strucutre**
 
 XXXXXXx
 
-## **How to Reproduce**
+# **How to Reproduce**
 
 - Clone the repository
 - Install dependencies
 - 
-## **Requirements**
+# **Requirements**
 
 - Python 3.7+ (pandas, numpy, seaborn, matplotlib, scikit‑learn, statsmodels)
 - VS Code
@@ -221,7 +227,8 @@ XXXXXXx
 - GitHub (version control)
 - Dataset: BRFSS 2015 CSV
 
-**Ethical Considerations**
+
+# **Ethical and Privacy Considerations**
 
 ## **Data Privacy**
 
@@ -241,7 +248,7 @@ Predictive models can serve to amplify these biases, so results should be interp
 
 The BRFSS dataset is publicly released for research use, so there are no direct legal restrictions. However, health data can reflect broader societal inequalities and differences in healthcare access. Any insights or models built from this dataset should be interpreted with awareness of these underlying disparities.
 
-## **Use of generative AI**
+# **Use of generative AI**
 
 ## **Further Analysis Opportunities**
 
@@ -254,6 +261,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
