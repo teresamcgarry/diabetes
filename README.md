@@ -213,9 +213,15 @@ The dashboard is designed to communicate insights effectively to both technical 
 
 <img width="2000" height="1115" alt="image" src="https://github.com/user-attachments/assets/38e2a727-b9ea-4461-9dc8-9bfffcf9c03e" />
 
-# **Repository Strucutre**
+## **Page 7: This page is a summary of the SHAP analysis offering more explanation the diabetes risk predictors**
 
-XXXXXXx
+![Uploading image.png…]()
+
+
+# **Repository Strucutre**
+<img width="648" height="494" alt="image" src="https://github.com/user-attachments/assets/df4cf5e7-00d7-46fb-ab46-e78dea5e6887" />
+
+This was created using: <https://r3cla.github.io/HubTree/>
 
 # **Requirements**
 
@@ -324,6 +330,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
