@@ -33,6 +33,7 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 - Practical Challenges and Considerations
 - Ethical and Privacy Considerations
 - Use of Generative AI
+- Evaluate the leaning process
 - Further Analysis Opportunities
 - Credits
 
@@ -124,6 +125,18 @@ A Trello board was used for project planning and tracking.
 [Diabetes Analysis | Trello](https://trello.com/b/wzOxufpZ/diabetes-analysis)
 
 # **Methods & Analysis Approach** 
+
+# **The application of data analytics tools, technologies and methodologies**
+
+I experimented with different statititical techniques (mean, median, mode, standard deviation and chi-square, visualisation libraries (Matplotlib and Plotly, and seaborn), modelling approaches (multinomical regression, logistic regression, random forest, random forest with weights and parameter tuning and eventually SHAP, and workflow structures to determine what best supported accurate predictions and clear interpretability. 
+
+I also trialled AI Assistant in Visual Code for automated modelling appraoches and documented these experiments in GitHub. 
+
+Building the scikit‑learn pipeline required restructuring my preprocessing steps, and I iterated through several designs to avoid data leakage and improve reproducibility. 
+
+I encountered many challenges such as a dataset with the majority were no diabetes, making analysis challenging. Also the SHAP computational time crashed my compter on several occasions, and there were some issues with categorical encoding of BMI for visualisaiotn and the remembering to drop them for modelling and use BMI_winsorised took several iterations, and I resolved them through tenactiy and experimentation.
+
+These trials, refinements, and documented commits demonstrate a deliberate, research‑driven approach to selecting and adapting tools that strengthened both the workflow and the final model.
 
 ## **Data cleaning**
 
@@ -316,11 +329,29 @@ Fianlly, AI contributed to the storytelling aspect of the project by helping me 
 
 This combination of analytical power, visual clarity, and narrative support significantly improved the quality and impact of the final work.
 
+# **Evaluate the leaning process**
+
+Working on this project has been a genuinely iterative learning experience that strengthened both my technical skills and my ability to adapt to new tools and challenges. Along the way, I uncovered gaps in my Python programming and statistical knowledge—whether it was handling skewed health variables, structuring scikit‑learn pipelines, or learning entirely new techniques like SHAP and SMOTE. Getting comfortable with Power BI and DAX was equally rewarding and occasionally exasperating, but seeing the final dashboard come together in a way that tells a clear, compelling story made the effort worthwhile.
+
+Each challenge pushed me to research solutions, test alternatives, and refine my approach. Analysis is never just about writing code; it’s about exploring the data, understanding what it represents, and shaping a narrative that does it justice. All of this work is fully documented in the training and analysis notebook located at analysis/testing_and_analysis.md.
+
+My key learnings include:
+
+What feels impossible at midnight often becomes achievable in the morning—very little works perfectly the first time, and that’s normal.
+
+Data analysis is a journey. You can’t predict every technique or library you’ll need, and sometimes your environment breaks because you’ve installed too many conflicting packages. Frustrating, yes—but always solvable.
+
+Stay curious, and remember that data analysis is meant to be enjoyable.
+
+Through this process, I’ve learned a great deal about Python, Power BI, GitHub, PowerPoint, and statistical testing. And perhaps most importantly, I’ve learned that analysis is never truly “finished”—there’s always another test you could run or another refinement you could make. The real skill lies in recognising when the results are consistent, meaningful, and ready to stand on their own.
+
 # **Further Analysis Opportunities**
 
 Further analysis opportinities are outlined in the accompanying file located here: analysis/testing_and_analysis.md
 
 [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com)
+
+
 
 # **Credits**
 
@@ -329,6 +360,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
