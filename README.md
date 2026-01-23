@@ -5,7 +5,7 @@
 
 # **Project Overview**
 
-This project delivers a complete analytics workflow exploring health indicators and demographic factors associated with diabetes. It includes feature engineering, data aggregation, statistical testing, and visualization using Python and Power BI.
+This project delivers a complete analytics workflow exploring health indicators and demographic factors associated with diabetes. It includes feature engineering, data aggregation, statistical testing, and visualisation using Python, PowerPoint and Power BI.
 
 The goal is to identify meaningful predictors of diabetes that can support early detection and inform public‑health decision making.
 
@@ -64,6 +64,8 @@ In 2021:
 - **38.4 million Americans** had diabetes
 - **97.6 million adults** had prediabetes
 - **1.2 million** new diagnoses occurred
+
+Data analytics plays a crucial role in healthcare, and this project demonstrates how analytical methods and AI can help address real‑world challenges such as early identification of diabetes risk and understanding the factors that drive poor health outcomes. By applying statistical modelling, machine‑learning techniques, and interpretability tools like SHAP, the analysis shows how data can uncover hidden patterns, support targeted interventions, and guide resource allocation. 
 
 # **Diabetes Dataset Description**
 
@@ -334,15 +336,17 @@ The BRFSS dataset is publicly released for research use, so there are no direct 
 
 # **Use of generative AI**
 
-AI played a key role in supporting this project by accelerating coding, guiding data analysis, enhancing visualisation, and elevating the overall story-telling. 
+Generative AI played a central role in supporting this project by accelerating coding, guiding data analysis, enhancing visualisation, and strengthening the overall story. 
 
-It enabled me to understnad and process complex datasets quickly and accurately, uncovering patterns and insights that would have been difficult or taken longer to identify manually. 
+It helped me interpret and process complex health data more efficiently, revealing patterns and insights that would have been far slower to uncover manually. 
 
-Through dynamic and clear visualisations, AI helped transform raw information into clear and intuitive graphics that supported deeper understanding. 
+AI‑driven visualisation support also enabled me to turn raw outputs into clear, intuitive graphics that deepened understanding and improved communication of results. 
 
-Fianlly, AI contributed to the storytelling aspect of the project by helping me synthisise and structure findings into a coherent, engaging story. 
+Beyond the technical work, AI contributed to the storytelling aspect of the project by helping me synthesise findings and structure them into a coherent, concise, engaging narrative. 
 
-This combination of analytical power, visual clarity, and narrative support significantly improved the quality and impact of the final work.
+Throughout the workflow, AI‑assisted tools provided valuable support for refining code, troubleshooting issues, and exploring alternative modelling approaches. 
+
+Together, these capabilities demonstrate how analytics and AI can transform raw health data into actionable insights that strengthen decision‑making and enable more proactive, data‑driven healthcare.
 
 # **Evaluate the learning process**
 
@@ -375,6 +379,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
