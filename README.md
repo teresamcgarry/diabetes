@@ -13,7 +13,7 @@ Final outputs include:
 
 - Reproducible Python scripts
 - Interactive Power BI dashboards
-- A concise presentation deck
+- A concise PowerPoint presentation deck
 
 All datasets, analysis code, and visual assets are organized for clarity and portfolio readiness.
 
@@ -33,7 +33,7 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 - Practical Challenges and Considerations
 - Ethical and Privacy Considerations
 - Use of Generative AI
-- Evaluate the learning process
+- Evaluation of the learning process
 - Further Analysis Opportunities
 - Credits
 
@@ -41,7 +41,7 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 
 ## *Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?*
 
-To address this question, predictors were organised into five conceptual domains. This structure supports both interpretation and story-telling when discussing model results. 
+To address this question, predictors were organised into five conceptual domains. 
 
 The five groups are:
 
@@ -71,7 +71,7 @@ Data analytics plays a crucial role in healthcare, and this project demonstrates
 
 ## **Dataset Explored**
 
-The **Behavioural Risk Factor Surveillance System (BRFSS)** is an annual CDC survey collecting responses from over 400,000 U.S. adults on health behaviours, chronic conditions, and preventive care.
+The **Behavioural Risk Factor Surveillance System (BRFSS)** is an annual CDC (Centers for Disease Control and Prevention, the national public health agency of the United States) survey collecting responses from over 400,000 U.S. adults on health behaviours, chronic conditions, and preventive care.
 
 This project uses the **2015 BRFSS dataset**, sourced from Kaggle: _diabetes_012_health_indicators_BRFSS2015.csv_
 
@@ -131,7 +131,7 @@ A Trello board was used for project planning and tracking.
 ## **Methods**
 I selected research methodologies that aligned with the dataset and the goal of identifying predictors of diabetes risk. Because the data came from a health survey rather than an experiment, an observational analytical approach was most appropriate. I combined exploratory data analysis, logistic regression, and Random Forest modelling to interpret relationships, quantify predictor effects, and capture nonlinear patterns. These methods were chosen to balance interpretability with predictive accuracy. Their rationale for use and limitations are documented in a separate document (**analysis/testing_and_analysis.md**).
 
-# **The application of data analytics tools, technologies and methodologies**
+## **The application of data analytics tools, technologies and methodologies**
 
 I experimented with different statititical techniques (mean, median, mode, standard deviation and chi-square, visualisation libraries (Matplotlib and Plotly, and seaborn), modelling approaches (multinomical regression, logistic regression, random forest, random forest with weights and parameter tuning and eventually SHAP, and workflow structures to determine what best supported accurate predictions and clear interpretability. 
 
@@ -149,11 +149,11 @@ The dataset was already pre‑cleaned, so only minimal preprocessing was require
 
 ## **Winsorisation**
 
-The accompanying testing_and_analysis file (analysis/testing_and_analysis.md) documents one additional step, anmely, Winsorisation of the BMI variable. 
+The accompanying testing and analysis file (analysis/testing_and_analysis.md) documents one additional step, namely, Winsorisation of the BMI variable. 
 
 The raw BMI values contained extreme outliers at both ends of the distribution (as low as 12 and as high as 98). To reduce the influence of these biologically implausible values while retaining all observations, the BMI range was Winsorised to fall between 18 and 50.
 
-## **Statistical Analysis:Evaluate the problem-solving approach and solution aproposed**
+## Statistical Analysis: Evaluate the problem-solving approach and solution aproposed
 
 Several complementary analytical approaches were applied:
 
@@ -178,16 +178,20 @@ I considered alternative approaches such as gradient boosting, but Random Forest
 ## Conclusions 
 
 **1. Clinical / Physiological factors lead**
+
 BMI, blood pressure, cholesterol, and general health were the strongest risk indicators.
 
 **2. Demographics matter**
+
 Age (especially mid-40s onwards) and lower income levels were the next most important predictors
 
 **3. Functional limitations signalled risk**
+
 Poor physical health days, mobility issues and mental health burden, flagged elevated risk
 
 **4. Lifestyle factors contributed but were less dominant**
-Smoking, alcohol use, and physical inactivity contributed, but were less influential than clinical and socioeconomic factors 
+
+Smoking, alcohol use, and physical inactivity contributed, but were less influential than clinical, demographic and socioeconomic factors 
 
 ## **Recommendations**
 
@@ -207,11 +211,11 @@ Insights from this data analysis are communicated through multiple formats to su
 
 - A Power BI dashboard providing an exploration of key metrics and patterns.
 
-- A presentation summarising the main findings, modelling results, and practical implications.
+- A PowerPoint presentation summarising the main findings, modelling results, and practical implications.
 
 - Visualisations embedded within Jupyter notebooks.
 
-## **How Dashboard Pages and Insights communicates findings to technical and non‑technical audiences**
+## **Communicating findings to technical and non‑technical audiences**
 
 The dashboard is designed to communicate insights effectively to both technical and non-technical audiences by combining clear visual summaries and plain-language explanations for decision-makers with the ability to explore underlying metrics and model outputs for more technically informed users.
 
@@ -226,6 +230,7 @@ The dashboard is designed to communicate insights effectively to both technical 
 ## **Page 3: This page is a summary of the diabetes predictors grouped into 5 groups to aid understanding**
 
 <img width="2000" height="1121" alt="image" src="https://github.com/user-attachments/assets/ac9f1c07-c904-45cf-b8f0-4d3e3d717295" />
+
 
 ## **Page 4: This page is a summary of the top 5 predictors of diabetes risk**
 
@@ -277,7 +282,7 @@ The raw dataset was imported, inspected, and cleaned systematically; although no
 
 GitHub served as the central workspace for storing code and project files, providing transparency, traceability, and safe experimentation through version control. Each stage of refinement—from early exploratory cleaning to the final preprocessing pipelines—was captured in incremental commits, allowing changes to be reviewed, compared, and reverted when necessary. Detailed documentation in the notebook explains every transformation step, including outlier handling, feature engineering, and validation checks. The Power BI dashboard also includes a dedicated section outlining data sources and the full processing pipeline, reinforcing how the data was collected, prepared, and transformed throughout the project.
 
-# *How to Reproduce this project*
+# *How to reproduce this project*
 
 To reproduce this project, clone the repository to your local machine and install all required dependencies using the provided environment or requirements file. 
 
@@ -348,21 +353,23 @@ Throughout the workflow, AI‑assisted tools provided valuable support for refin
 
 Together, these capabilities demonstrate how analytics and AI can transform raw health data into actionable insights that strengthen decision‑making and enable more proactive, data‑driven healthcare.
 
-# **Evaluate the learning process**
+# **Evaluation of the learning process**
 
 Working on this project has been a genuinely iterative learning experience that strengthened both my technical skills and my ability to adapt to new tools and challenges. Along the way, I uncovered gaps in my Python programming and statistical knowledge—whether it was handling skewed health variables, structuring scikit‑learn pipelines, or learning entirely new techniques like SHAP and SMOTE. Getting comfortable with Power BI and DAX was equally rewarding and occasionally exasperating, but seeing the final dashboard come together in a way that tells a clear, compelling story made the effort worthwhile.
 
-Each challenge pushed me to research solutions, test alternatives, and refine my approach. Analysis is never just about writing code; it’s about exploring the data, understanding what it represents, and shaping a narrative that does it justice. All of this work is fully documented in the training and analysis notebook located at analysis/testing_and_analysis.md.
+Each challenge pushed me to research solutions, test alternatives, and refine my approach. Analysis is never just about writing code; it’s about exploring the data, understanding what it represents, and shaping a narrative that does it justice. All of this work is fully documented in the training and analysis notebook located at **analysis/testing_and_analysis.md**.
 
 My key learnings include:
 
-What feels impossible at midnight often becomes achievable in the morning—very little works perfectly the first time, and that’s normal.
+- What feels impossible at midnight often becomes achievable in the morning—very little works perfectly the first time, and that’s normal.
 
-Data analysis is a journey. You can’t predict every technique or library you’ll need, and sometimes your environment breaks because you’ve installed too many conflicting packages. Frustrating, yes—but always solvable.
+- Data analysis is a journey. You can’t predict every technique or library you’ll need, and sometimes your environment breaks because you’ve installed too many conflicting packages. Frustrating, yes—but always solvable.
 
-Stay curious, and remember that data analysis is meant to be enjoyable.
+- Stay curious, and remember that data analysis is meant to be enjoyable.
 
 Through this process, I’ve learned a great deal about Python, Power BI, GitHub, PowerPoint, and statistical testing. And perhaps most importantly, I’ve learned that analysis is never truly “finished”—there’s always another test you could run or another refinement you could make. The real skill lies in recognising when the results are consistent, meaningful, and ready to stand on their own.
+
+At that point it is time to stop!
 
 # **Further Analysis Opportunities**
 
@@ -379,6 +386,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
