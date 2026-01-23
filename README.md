@@ -1,10 +1,10 @@
 # **Capstone Project: Diabetes Risk Prediction Project**
 
 ## **Identifying the Most Influential Drivers of Diabetes Risk**
-**
+
 ![People Image v4](https://github.com/user-attachments/assets/ce3ab396-568a-414d-8e31-a9c9a2649b3a)
 
-# **Project Overview**
+# Project Overview
 
 This project delivers a complete analytics workflow exploring health indicators and demographic factors associated with diabetes. It includes feature engineering, data aggregation, statistical testing, and visualisation using Python, PowerPoint and Power BI.
 
@@ -39,7 +39,7 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 - Credits
 - Author
 
-# *Key Business Question*
+# Key Business Question
 
 ## *Which health, behavioural and socioeconomic factors are the most influential predictors of diabetes risk in the US population?*
 
@@ -292,9 +292,9 @@ After setup, open the testing_and_analysis notebook to review what analysis was 
 
 If your project uses configuration files or specific data paths, update those settings as noted in the documentation.
 
-# **Practical challenges and considerations**
+# *Practical challenges and considerations*
 
-## **Technical environment issues**
+## Technical environment issues
 
 Kernel instability: Repeated kernel crashes disrupted workflow, especially during memory‑intensive modelling and visualisation. This required frequent restarts, checkpointing, and breaking code into smaller, more manageable segments.
 
@@ -385,7 +385,9 @@ The dataset is located here:
 
 The Code Institute course materials for the course "Data Analysis with Artificial Intelligence" were used as a template for the code in this project.
 
-The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
+The following GutHub File Structure Visualizer was used: <https://r3cla.github.io/HubTree/>
+
+For Markdown files Word to Markdown was used: <https://word2md.com/>
 
 All files were created and uploaded to GitHub
 
@@ -396,6 +398,7 @@ Thank you for taking the time to read my documentation. If you wish to connect w
 **teresa_mcgarry@hotmail.com**
 
 Thank you and good luck.
+
 
 
 
