@@ -36,6 +36,7 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 - Evaluation of the learning process
 - Further Analysis Opportunities
 - Credits
+- Author
 
 # *Key Business Question*
 
@@ -373,7 +374,9 @@ At that point it is time to stop!
 
 # **Further Analysis Opportunities**
 
-Further analysis opportinities are outlined in the accompanying file located here: analysis/testing_and_analysis.md
+Further analysis opportinities are outlined in the accompanying file located here: **analysis/testing_and_analysis.md**
+
+The dataset is located here:
 
 [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com)
 
@@ -386,6 +389,15 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
+# **The Author**
+
+Thank you for taking the time to read my documentation. If you wish to connect with me or have suggestions for project enhancement my contact details are:
+
+**teresa_mcgarry@hotmail.com**
+
+Thank you and good luck.
+
 
 
 
