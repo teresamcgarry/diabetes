@@ -148,9 +148,9 @@ The accompanying testing_and_analysis file (analysis/testing_and_analysis.md) do
 
 The raw BMI values contained extreme outliers at both ends of the distribution (as low as 12 and as high as 98). To reduce the influence of these biologically implausible values while retaining all observations, the BMI range was Winsorised to fall between 18 and 50.
 
-## **Statistical Analysis**
+## **Statistical Analysis:Evaluate the problem-solving approach and solution aproposed**
 
-To explore variable relationships and determine the most influential predictors of diabetes risk, several complementary analytical approaches were applied:
+Several complementary analytical approaches were applied:
 
 - Correlation analysis to assess linear associations between key features.
 
@@ -158,7 +158,15 @@ To explore variable relationships and determine the most influential predictors 
 
 - Random Forest modelling, including systematic hyperparameter tuning, to capture nonlinear relationships and interaction effects while evaluating variable importance.
 
-This anlysis is fully documented in the training and analysis notebook which can be located here: analysis/testing_and_analysis.md
+To evaluate the relationships between variables and identify the strongest predictors of diabetes risk, I applied a combination of correlation analysis, logistic regression, and Random Forest modelling, each selected for the specific analytical strengths they offer. 
+
+**Correlation analysis** provided an initial, intuitive view of linear associations and helped me familiarise myself with the dataset, though it is limited in that it cannot detect nonlinear patterns or interaction effects. 
+
+**Logistic regression—both multinomial and binary** allowed me to quantify the direction and magnitude of each predictor’s influence, but its assumptions of linearity in the log‑odds and its difficulty handling complex interactions meant it could not fully capture the structure of the data. 
+
+To overcome these limitations, I incorporated a **Random Forest model with hyperparameter tuning**, which is well suited for modelling nonlinear relationships and interactions while also providing clear variable‑importance measures. 
+
+I considered alternative approaches such as gradient boosting, but Random Forest offered the best balance of interpretability, performance, and computational efficiency for this dataset. All methods, decisions, and reflections—including descriptions of each technique and their trade‑offs—are fully documented in the training and analysis notebook at **analysis/testing_and_analysis.md**
 
 # **Key Findings**
 
@@ -226,7 +234,7 @@ The dashboard is designed to communicate insights effectively to both technical 
 
 <img width="2000" height="1115" alt="image" src="https://github.com/user-attachments/assets/38e2a727-b9ea-4461-9dc8-9bfffcf9c03e" />
 
-## **Page 7: This page is a summary of the SHAP analysis offering more explanation the diabetes risk predictors**
+## **Page 7: This page is a summary of the SHAP analysis offering more explanation of the diabetes risk predictors**
 
 <img width="1465" height="808" alt="image" src="https://github.com/user-attachments/assets/fb19fff9-1b59-417f-880d-40e417f13f8f" />
 
@@ -360,6 +368,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
