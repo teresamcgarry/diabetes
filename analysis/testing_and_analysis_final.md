@@ -38,7 +38,7 @@ Therefore, in this dataset, there are some extreme outliers at both the lower an
 |--------------|------------|----------|----------|---------|---------|---------|---------|---------|
 | **BMI**      | **253680** | **28**   | **6.61** | **12**  | **24**  | **27**  | **31**  | **98**  |
 
-<img src="media/image1.png" style="width:5.99042in;height:4.00056in" />
+<img src="media\media\image1.png" style="width:6.03194in;height:4.02829in" />
 
 BMI was also grouped into 4 classifications to aid analysis:
 
@@ -50,7 +50,7 @@ BMI was also grouped into 4 classifications to aid analysis:
 
 -   Obese: &gt;=30
 
-<img src="media/image2.png" style="width:6.03209in;height:3.92763in" />
+<img src="media\media\image2.png" style="width:6.03209in;height:3.92763in" />
 
 **Winsorisation**
 
@@ -68,7 +68,7 @@ In this dataset, Winsorisation for BMI was set to 1% (BMI = 18) and 99% (BMI = 5
 
 This variable, **BMI\_winsorised,** will be used in all analyses going forward and BMI will be dropped.
 
-<img src="media/image3.png" style="width:6.05293in;height:4.63606in" />
+<img src="media\media\image3.png" style="width:6.05293in;height:4.63606in" />
 
 **Spearman Correlation**
 
@@ -92,7 +92,7 @@ Two separate correlation analyses were conducted:
 
 This initial correlation matrix shows how health and demographic variables are interrelated. General health is linked to physical health and mobility issues, while age is correlated with higher blood pressure and poorer overall health. A higher BMI is associated with increased cardiovascular risks, and lower income and education levels tend to be associated with worse health outcomes.
 
-<img src="media/image4.png" style="width:6.26806in;height:5.00417in" />
+<img src="media\media\image4.png" style="width:6.26806in;height:5.00417in" />
 
 **Second correlation: Diabetes\_012 as the target variable**
 
@@ -241,7 +241,7 @@ No diabetes (class 0) shows that whilst most predictions are correctly identifie
 
 In summary, the model over-predicts diabetes and misclassifies a substantial number of diabetes cases as healthy. This limits its usefulness in a medical setting.
 
-<img src="media/image5.png" style="width:4.19794in;height:2.82778in" />
+<img src="media\media\image5.png" style="width:4.19794in;height:2.82778in" />
 
 **Top positive & negative coefficients per class:**
 
@@ -394,7 +394,7 @@ The model correctly identifies 4,206 out of 7,070 cases, but 2,864 are misclassi
 
 The model could be useful for initial screening but lacks the precision required for a formal diagnosis.
 
-<img src="media/image6.png" style="width:3.76944in;height:2.491in" />
+<img src="media\media\image6.png" style="width:3.76944in;height:2.491in" />
 
 **Prediabetes (class 1): top positive features:**
 
@@ -490,7 +490,7 @@ A key reason for this is likely to be the imbalance in the dataset with the domi
 
 The model’s failure to reliably distinguish the high-risk groups means that it will have limited usefulness in a real-world setting.
 
-<img src="media/image7.png" style="width:3.41632in;height:2.88889in" />
+<img src="media\media\image7.png" style="width:3.41632in;height:2.88889in" />
 
 Top 15 feature importances:
 
@@ -524,7 +524,7 @@ Top 15 feature importances:
 
 -   DiffWalk 0.018963
 
-<img src="media/image8.png" style="width:6.26806in;height:4.66111in" />
+<img src="media\media\image8.png" style="width:6.26806in;height:4.66111in" />
 
 **Improving the Model**
 
@@ -591,7 +591,7 @@ However, the precision is not so good as 11,135 healthy individuals are incorrec
 
 This means in a real-world setting, the model may be useful for initial screening, but it is not reliable for confirming a formal prediabetes or diabetes diagnosis.
 
-<img src="media/image9.png" style="width:3.94514in;height:3.31197in" />
+<img src="media\media\image9.png" style="width:3.94514in;height:3.31197in" />
 
 Top 15 feature importances:
 
@@ -625,7 +625,7 @@ Top 15 feature importances:
 
 -   Fruits 0.009378
 
-<img src="media/image10.png" style="width:5.02831in;height:3.7665in" />
+<img src="media\media\image10.png" style="width:5.02831in;height:3.7665in" />
 
 These top 15 features were then grouped into 1 of 5 groups as follows:
 
@@ -681,7 +681,7 @@ These top 15 features were then grouped into 1 of 5 groups as follows:
 
 -   Lifestyle: 3.2%
 
-> <img src="media/image11.png" style="width:5.85675in;height:3.55in" />
+> <img src="media\media\image11.png" style="width:5.85675in;height:3.55in" />
 
 **Hyperparameter Tuning for Random Forest**
 
@@ -718,7 +718,7 @@ The model accuracy was 80%.
 | macro avg                | 0.6575        | 0.6964     | 0.6718       | 50736       |
 | weighted avg             | 0.8293        | 0.8034     | 0.8141       | 50736       |
 
-<img src="media/image12.png" style="width:4.79696in;height:4.03822in" />
+<img src="media\media\image12.png" style="width:4.79696in;height:4.03822in" />
 
 All feature importance:
 
@@ -776,7 +776,7 @@ The model built the following groups:
 
 -   Lifestyle: 8.8%
 
-<img src="media/image13.png" style="width:6.26806in;height:3.85in" />
+<img src="media\media\image13.png" style="width:6.26806in;height:3.85in" />
 
 **SHAP**
 
@@ -796,7 +796,7 @@ Why it matters
 
 The SHAP summary shows that **clinical health measures** (general health, BMI, blood pressure, cholesterol) were the strongest drivers of diabetes‑risk predictions, **demographics** (age and income) were the next most influential, **functional limitations** added meaningful but smaller impact, and **lifestyle behaviours** contributed the least compared with the other factor groups.
 
-<img src="media/image14.png" style="width:6.26806in;height:7.63194in" />
+<img src="media\media\image14.png" style="width:6.26806in;height:7.63194in" />
 
 **Further Research Opportunities**
 
