@@ -28,12 +28,12 @@ All datasets, analysis code, and visual assets are organized for clarity and por
 - Dashboards
 - Repository Structure
 - Requirements
-- GitHub
+- Effective data management practices
 - How to Reproduce this Project
 - Practical Challenges and Considerations
 - Ethical and Privacy Considerations
 - Use of Generative AI
-- Evaluate the leaning process
+- Evaluate the learning process
 - Further Analysis Opportunities
 - Credits
 
@@ -125,6 +125,9 @@ A Trello board was used for project planning and tracking.
 [Diabetes Analysis | Trello](https://trello.com/b/wzOxufpZ/diabetes-analysis)
 
 # **Methods & Analysis Approach** 
+
+## **Methods**
+I selected research methodologies that aligned with the dataset and the goal of identifying predictors of diabetes risk. Because the data came from a health survey rather than an experiment, an observational analytical approach was most appropriate. I combined exploratory data analysis, logistic regression, and Random Forest modelling to interpret relationships, quantify predictor effects, and capture nonlinear patterns. These methods were chosen to balance interpretability with predictive accuracy. Their rationale for use and limitations are documented in a separate document (**analysis/testing_and_analysis.md**).
 
 # **The application of data analytics tools, technologies and methodologies**
 
@@ -264,9 +267,13 @@ This was created using: <https://r3cla.github.io/HubTree/>
 - Windows/macOS/Linux compatible environment
 - Dataset: BRFSS 2015 CSV
 
-## *GitHub*
+# **Effective data management practices**
 
-GitHub provides a shared online workspace where code and project files are stored, making collaboration transparent and organized. Version control tracks every change over time, allowing teams to experiment safely, review edits, and revert to earlier versions when needed.
+In this project I demonstrated effective data collection, cleaning, storage, and processing by maintaining a clear, reproducible workflow supported by structured data management practices and a fully annotated Jupyter notebook. 
+
+The raw dataset was imported, inspected, and cleaned systematically; although no values were missing, BMI contained extreme outliers that required Winsorisation to stabilise the distribution. The cleaned dataset was then stored in a well‑organised, structured format to ensure consistency and repeatability across the analysis.
+
+GitHub served as the central workspace for storing code and project files, providing transparency, traceability, and safe experimentation through version control. Each stage of refinement—from early exploratory cleaning to the final preprocessing pipelines—was captured in incremental commits, allowing changes to be reviewed, compared, and reverted when necessary. Detailed documentation in the notebook explains every transformation step, including outlier handling, feature engineering, and validation checks. The Power BI dashboard also includes a dedicated section outlining data sources and the full processing pipeline, reinforcing how the data was collected, prepared, and transformed throughout the project.
 
 # *How to Reproduce this project*
 
@@ -337,7 +344,7 @@ Fianlly, AI contributed to the storytelling aspect of the project by helping me 
 
 This combination of analytical power, visual clarity, and narrative support significantly improved the quality and impact of the final work.
 
-# **Evaluate the leaning process**
+# **Evaluate the learning process**
 
 Working on this project has been a genuinely iterative learning experience that strengthened both my technical skills and my ability to adapt to new tools and challenges. Along the way, I uncovered gaps in my Python programming and statistical knowledge—whether it was handling skewed health variables, structuring scikit‑learn pipelines, or learning entirely new techniques like SHAP and SMOTE. Getting comfortable with Power BI and DAX was equally rewarding and occasionally exasperating, but seeing the final dashboard come together in a way that tells a clear, compelling story made the effort worthwhile.
 
@@ -368,6 +375,7 @@ The Code Institute course materials for the course "Data Analysis with Artificia
 The following GutHub File Structure Visualizer was used. <https://r3cla.github.io/HubTree/>
 
 All files were created and uploaded to GitHub
+
 
 
 
