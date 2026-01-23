@@ -1,6 +1,7 @@
 # **Capstone Project: Diabetes Risk Prediction Project**
 
-## **Analysis to understand the best predictors of diabetes risk**
+## **Identifying the Most Influential Drivers of Diabetes Risk**
+**
 ![People Image v4](https://github.com/user-attachments/assets/ce3ab396-568a-414d-8e31-a9c9a2649b3a)
 
 # **Project Overview**
@@ -397,6 +398,7 @@ Thank you for taking the time to read my documentation. If you wish to connect w
 **teresa_mcgarry@hotmail.com**
 
 Thank you and good luck.
+
 
 
 
