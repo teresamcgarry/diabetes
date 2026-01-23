@@ -363,7 +363,7 @@ Each challenge pushed me to research solutions, test alternatives, and refine my
 
 My key learnings include:
 
-- What feels impossible at midnight often becomes achievable in the morning—very little works perfectly the first time, and that’s normal.
+- What feels impossible at midnight often becomes achievable in the morning — very little works perfectly the first time, and that’s normal.
 
 - Data analysis is a journey. You can’t predict every technique or library you’ll need, and sometimes your environment breaks because you’ve installed too many conflicting packages. Frustrating, yes—but always solvable.
 
@@ -381,8 +381,6 @@ The dataset is located here:
 
 [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?utm_source=copilot.com)
 
-
-
 # **Credits**
 
 The Code Institute course materials for the course "Data Analysis with Artificial Intelligence" were used as a template for the code in this project.
@@ -398,15 +396,6 @@ Thank you for taking the time to read my documentation. If you wish to connect w
 **teresa_mcgarry@hotmail.com**
 
 Thank you and good luck.
-
-
-
-
-
-
-
-
-
 
 
 
